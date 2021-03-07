@@ -1,0 +1,11 @@
+@import '../../styles/breakpoints';
+
+footer {
+  padding: 1rem 0;
+  font-size: 0.6rem;
+  text-align: center;
+
+  @include breakpoint-small-down {
+    font-size: 0.7rem;
+  }
+}

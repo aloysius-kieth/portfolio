@@ -1,0 +1,119 @@
+@function multiple-box-shadow($n) {
+  $value: '#{random(2000)}px #{random(2000)}px';
+  @for $i from 2 through $n {
+    $value: '#{$value}, #{random(2000)}px #{random(2000)}px';
+  }
+  @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(650);
+$shadows-medium: multiple-box-shadow(250);
+$shadows-large: multiple-box-shadow(80);
+
+$duration1: 80s;
+$duration2: 150s;
+$duration3: 200s;
+
+#stars1 {
+  width: 1px;
+  height: 1px;
+  z-index: -3;
+  // border-radius: 50%;
+
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animate $duration1 linear infinite,
+    twinkle 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    // border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  z-index: -2;
+  // border-radius: 50%;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animate $duration2 linear infinite,
+    twinkle cubic-bezier(1, 0, 0, 1) infinite alternate;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    // border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  z-index: -1;
+  // border-radius: 50%;
+  background: transparent;
+  box-shadow: $shadows-large;
+  animation: animate $duration3 linear infinite,
+    twinkle 1s ease-in-out infinite alternate;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    // border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-large;
+  }
+}
+
+#stars4 {
+  width: 2px;
+  height: 2px;
+  z-index: -1;
+  // border-radius: 50%;
+  background: transparent;
+  box-shadow: $shadows-large;
+  animation: animate $duration3 linear infinite,
+    twinkle 1s ease-in-out infinite alternate;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3000px;
+    width: 2px;
+    height: 2px;
+    // border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-large;
+  }
+}
+
+@keyframes twinkle {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translate(-2000px, -1500px);
+  }
+  to {
+    transform: translate(2000px, 0px);
+  }
+}

@@ -1,0 +1,146 @@
+/*  SCREEN BREAKPOINTS */
+.about-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+
+@media (max-width: 425px) {
+  .about-page {
+    padding-top: 3rem;
+  }
+}
+
+.about-page h1 {
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+.about-page .content-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .about-page .content-wrapper .about-wrapper .about-content {
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .ityped-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+          animation: blink 0.3s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.about-page .content-wrapper .about-wrapper .about-content p {
+  font-weight: 400;
+  margin: 1rem 4rem;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 4rem;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section h3 {
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section h3 svg {
+  margin-left: 0.5rem;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section .skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section .skills-list ol {
+  -webkit-columns: 200px 3;
+          columns: 200px 3;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section .skills-list ol li {
+  font-weight: 400;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section .skills-list ol li svg {
+  margin-left: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .skills-section .skills-list ol li .hash-tag-icon {
+  margin-left: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .experience-section h3 {
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .experience-section h3 svg {
+  margin-left: 0.5rem;
+}
+
+.about-page .content-wrapper .about-wrapper .about-content .experience-section img.company-logo {
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,yBAAyB;ADEzB,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,MAAM;EACf,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,MAAM;CAKnB;;AC4BC,MAAM,EAAE,SAAS,EAAE,KAAK;EDpC1B,AAAA,MAAM,CAAC;IAMH,SAAS,EAAE,MAAM;GAEpB",
+    "sources": [
+        "style.scss",
+        "../../styles/_breakpoints.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

@@ -1,0 +1,29 @@
+.scroll-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  animation: bounce cubic-bezier(0.075, 0.82, 0.165, 1) 1s infinite;
+
+  svg {
+    font-size: 2rem;
+  }
+
+  .arrow {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  @keyframes bounce {
+    to {
+      transform: translateY(0);
+    }
+    from {
+      transform: translateY(-100);
+    }
+  }
+}

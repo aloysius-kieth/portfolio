@@ -1,0 +1,27 @@
+@import '../../styles/breakpoints';
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 90;
+  top: -3px;
+  left: -3px;
+
+  .ribbon {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.7rem;
+    color: #333;
+    text-align: center;
+    transform: rotate(-45deg);
+    position: relative;
+    padding: 7px 0;
+    top: 15px;
+    left: -30px;
+    width: 120px;
+    background-color: #ebb134;
+    color: #fff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,13 @@
+/*  SCREEN BREAKPOINTS */
+footer {
+  padding: 1rem 0;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

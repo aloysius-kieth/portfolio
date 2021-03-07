@@ -1,0 +1,44 @@
+@import '../../styles/breakpoints';
+
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    text-align: center;
+    padding-bottom: 1rem;
+    line-height: 4rem;
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    .ityped-cursor {
+      opacity: 1;
+      animation: blink 0.3s infinite;
+      animation-direction: alternate;
+    }
+
+    @include breakpoint-small-down {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    @keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+  .tag-line {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.375rem;
+
+    @include breakpoint-small-down {
+      margin: 2rem 2.5rem;
+    }
+  }
+}

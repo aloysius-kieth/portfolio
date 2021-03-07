@@ -1,0 +1,108 @@
+/*  SCREEN BREAKPOINTS */
+.portfolio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 5px 24px -7px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 5px 24px -7px rgba(0, 0, 0, 0.75);
+  width: 12rem;
+  margin: 1rem 1rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item {
+    width: 15rem;
+  }
+}
+
+.portfolio-item:hover {
+  -webkit-box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, 0.75);
+}
+
+.portfolio-item .title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item .title {
+    font-size: 1.3rem;
+  }
+}
+
+.portfolio-item .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item .description {
+    font-size: 0.9rem;
+  }
+}
+
+.portfolio-item .icon {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item .icon {
+    font-size: 2rem;
+  }
+}
+
+.portfolio-item .icon svg {
+  margin: 0 0.25rem;
+}
+
+.portfolio-item .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-item .links {
+    font-size: 1.2rem;
+  }
+}
+
+.portfolio-item .links a {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.portfolio-item .links a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid inherit;
+}
+/*# sourceMappingURL=style.css.map */
