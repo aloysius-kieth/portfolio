@@ -1,4 +1,4 @@
-# Portfolio Website 2021
+# Portfolio Website
 
 ### [Live Site](https://aloysius-kieth.github.io/portfolio-2021/)
 
